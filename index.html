@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vasek Mlejnsky - Personal Website</title>
+  <link rel="stylesheet" href="css/tailwind.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white dark:bg-gray-800">
+  <header id="header" class="text-center py-8">
+    <img src="img/profile_picture.jpg" alt="Vasek Mlejnsky" class="w-32 h-32 mx-auto rounded-full">
+    <h1 class="text-4xl font-bold mt-4">Vasek Mlejnsky</h1>
+    <p class="text-xl mt-2">Founder and Software Developer</p>
+  </header>
+
+  <main id="main" class="container mx-auto px-4">
+    <section id="hobbies" class="my-8">
+      <h2 class="text-2xl font-bold mb-4">Hobbies</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">
+          <img src="img/basketball.jpg" alt="Basketball" class="w-full h-48 object-cover rounded">
+          <h3 class="text-xl font-bold mt-4">Basketball</h3>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-4 rounded shadow">
+          <img src="img/software_development.jpg" alt="Software Development" class="w-full h-48 object-cover rounded">
+          <h3 class="text-xl font-bold mt-4">Building Software for Future AI Overlords</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="currentJob" class="my-8">
+      <h2 class="text-2xl font-bold mb-4">Current Job</h2>
+      <p class="text-lg">CEO at <a href="https://e2b.dev" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700">e2b.dev</a></p>
+    </section>
+
+    <section id="socialLinks" class="my-8">
+      <h2 class="text-2xl font-bold mb-4">Social Links</h2>
+      <ul class="flex justify-center space-x-4">
+        <li>
+          <a href="https://twitter.com/mlejva" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700">
+            <i class="fab fa-twitter"></i> Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/mlejva" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/mlejva" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer id="footer" class="text-center py-4">
+    <button id="darkModeToggle" class="text-blue-500 hover:text-blue-700" onclick="toggleDarkMode()">
+      <i class="fas fa-moon"></i> Toggle Dark Mode
+    </button>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
