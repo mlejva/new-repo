@@ -1,0 +1,36 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css';
+
+/* Custom styles for the personal website */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Dark mode styles */
+.dark {
+  --bg-primary: #1a202c;
+  --text-primary: #f7fafc;
+  --text-secondary: #a0aec0;
+  --border-color: #4a5568;
+}
+
+/* Light mode styles */
+.light {
+  --bg-primary: #f7fafc;
+  --text-primary: #1a202c;
+  --text-secondary: #718096;
+  --border-color: #e2e8f0;
+}
+
+/* Apply theme colors */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.border-theme {
+  border-color: var(--border-color);
+}
