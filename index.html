@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasek Mlejnsky - Personal Website</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <img src="img/logo.png" alt="Logo" class="h-10">
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="text-gray-700">About</a></li>
+                    <li><a href="#hobbies" class="text-gray-700">Hobbies</a></li>
+                    <li><a href="#contact" class="text-gray-700">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <section id="about" class="text-center">
+            <img src="img/profile.jpg" alt="Vasek Mlejnsky" class="w-48 h-48 mx-auto rounded-full">
+            <h1 class="text-4xl font-bold mt-4" id="name">Vasek Mlejnsky</h1>
+            <p class="text-xl mt-2" id="position">Founder and software developer</p>
+            <p class="text-gray-600 mt-4" id="currentJob">CEO at <a href="https://e2b.dev" target="_blank" rel="noopener noreferrer" id="websiteLink">e2b.dev</a></p>
+        </section>
+
+        <section id="hobbies" class="mt-12">
+            <h2 class="text-3xl font-bold mb-6">Hobbies</h2>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <li class="bg-white shadow-md rounded-md p-6">
+                    <h3 class="text-2xl font-bold mb-4">Basketball</h3>
+                    <p>Vasek enjoys playing basketball in his free time, both casually and competitively.</p>
+                </li>
+                <li class="bg-white shadow-md rounded-md p-6">
+                    <h3 class="text-2xl font-bold mb-4">Building software for future AI overlords</h3>
+                    <p>As a software developer, Vasek is passionate about creating software that will help shape the future of AI technology.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact" class="mt-12 text-center">
+            <h2 class="text-3xl font-bold mb-6">Get in touch</h2>
+            <p>If you'd like to get in touch with Vasek, feel free to reach out via <a href="mailto:vasek@example.com" class="text-blue-600">email</a>.</p>
+        </section>
+    </main>
+
+    <footer class="bg-white shadow-md mt-12">
+        <div class="container mx-auto px-4 py-6">
+            <p class="text-center text-gray-600">&copy; 2022 Vasek Mlejnsky. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
