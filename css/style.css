@@ -1,0 +1,83 @@
+@import 'tailwind.css';
+
+/* Custom styles */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.toggle-theme {
+  cursor: pointer;
+}
+
+.profile {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.profile h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.profile p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hobbies-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.hobbies-list li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-links a {
+  font-size: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #1a202c;
+  color: #cbd5e0;
+}
+
+.dark-mode .toggle-theme {
+  color: #cbd5e0;
+}
+
+.dark-mode .social-links a {
+  color: #cbd5e0;
+}
