@@ -1,0 +1,95 @@
+@import 'tailwind.css';
+
+/* Custom styles */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.position {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+.bio {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hobby {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.current-job {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.social-link {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: gray;
+  text-decoration: none;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #1a202c;
+  color: #f7fafc;
+}
+
+.dark-mode .position,
+.dark-mode .social-link {
+  color: #a0aec0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hobbies {
+    flex-direction: column;
+  }
+}

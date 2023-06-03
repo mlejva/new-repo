@@ -5,49 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vasek Mlejnsky - Personal Website</title>
   <link rel="stylesheet" href="css/tailwind.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-  <header class="bg-white dark:bg-gray-800 shadow-md">
-    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
-      <img src="img/logo.png" alt="Logo" class="h-8">
-      <button id="themeToggle" class="focus:outline-none" onclick="toggleTheme()">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-        </svg>
-      </button>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+  <header id="header" class="bg-white dark:bg-gray-800 shadow-md py-4">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center">
+        <div>
+          <h1 id="name" class="text-2xl font-bold">Vasek Mlejnsky</h1>
+          <p id="position" class="text-gray-600 dark:text-gray-300">Founder and Software Developer</p>
+        </div>
+        <button id="themeToggle" class="focus:outline-none">
+          <span class="sr-only">Toggle theme</span>
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
     </div>
   </header>
 
-  <main class="container mx-auto px-4 py-12">
-    <div class="text-center">
-      <img src="img/profile_picture.jpg" alt="Profile Picture" class="w-32 h-32 mx-auto rounded-full mb-4">
-      <h1 id="name" class="text-4xl font-bold">Vasek Mlejnsky</h1>
-      <h2 id="position" class="text-2xl text-gray-600 dark:text-gray-300">Founder and Software Developer</h2>
-    </div>
-
-    <section class="mt-12">
-      <h3 class="text-3xl font-bold mb-4">About Me</h3>
-      <p id="hobbies" class="text-lg">I enjoy playing basketball and building software for future AI overlords.</p>
-      <p id="currentJob" class="text-lg mt-4">Currently, I am the CEO at <a href="https://e2b.dev" target="_blank" class="text-blue-500 hover:text-blue-600">e2b.dev</a>.</p>
+  <main class="container mx-auto px-4 py-8">
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold mb-2">Bio</h2>
+      <p class="text-left">Vasek Mlejnsky is a passionate software developer and entrepreneur. He is the CEO of e2b.dev, where he leads a team of talented developers to create innovative solutions for clients. In his free time, Vasek enjoys playing basketball and building software for future AI overlords.</p>
     </section>
 
-    <section class="mt-12">
-      <h3 class="text-3xl font-bold mb-4">Connect with me</h3>
-      <div class="flex justify-center space-x-4">
-        <a id="twitterLink" href="https://twitter.com/mlejva" target="_blank" class="text-blue-500 hover:text-blue-600">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a id="linkedinLink" href="https://linkedin.com/in/mlejva" target="_blank" class="text-blue-500 hover:text-blue-600">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a id="githubLink" href="https://github.com/mlejva" target="_blank" class="text-blue-500 hover:text-blue-600">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold mb-2">Hobbies</h2>
+      <ul id="hobbies" class="list-disc list-inside text-left">
+        <li>Basketball</li>
+        <li>Building software for future AI overlords</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold mb-2">Current Job</h2>
+      <p id="currentJob" class="text-left">CEO at <a href="https://e2b.dev" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-600">e2b.dev</a></p>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold mb-2">Social Links</h2>
+      <ul id="socialLinks" class="space-y-2 text-left">
+        <li>
+          <a id="twitterLink" href="https://twitter.com/mlejva" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-600">
+            <i class="fab fa-twitter"></i> Twitter
+          </a>
+        </li>
+        <li>
+          <a id="linkedinLink" href="https://linkedin.com/in/mlejva" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-600">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </li>
+        <li>
+          <a id="githubLink" href="https://github.com/mlejva" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-600">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </li>
+      </ul>
     </section>
   </main>
 
-  <script src="js/scripts.js"></script>
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit-code.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

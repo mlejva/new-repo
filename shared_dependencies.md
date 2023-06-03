@@ -4,17 +4,18 @@ the files we have decided to generate are: index.html, styles.css, main.js, tail
 
 Shared dependencies:
 1. Exported variables:
-   - personInfo (object containing name, position, hobbies, current job, and links)
-   - theme (variable to store the current theme: dark or light)
+   - None
 
 2. Data schemas:
-   - PersonInfo (name, position, hobbies, currentJob, links)
+   - None
 
 3. ID names of DOM elements:
+   - header
    - name
    - position
    - hobbies
    - currentJob
+   - socialLinks
    - twitterLink
    - linkedinLink
    - githubLink
@@ -25,4 +26,3 @@ Shared dependencies:
 
 5. Function names:
    - toggleTheme
-   - setTheme
