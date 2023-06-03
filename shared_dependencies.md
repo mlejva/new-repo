@@ -1,10 +1,26 @@
-the app is: Personal website for Vasek Mlejnsky
+the app is: Personal website
 
-the files we have decided to generate are: index.html, styles.css, main.js, and tailwind.config.js
+the files we have decided to generate are: index.html, styles.css, main.js
 
 Shared dependencies:
-1. Exported variables: None
-2. Data schemas: None
-3. DOM element IDs: header, main, footer, darkModeToggle, hobbies, currentJob, socialLinks
-4. Message names: None
-5. Function names: toggleDarkMode
+1. Exported variables:
+   - theme (light/dark)
+
+2. Data schemas:
+   - Person (name, position, hobbies, currentJob, socialLinks)
+
+3. Id names of DOM elements:
+   - header
+   - toggle-theme
+   - name
+   - position
+   - hobbies-list
+   - current-job
+   - social-links
+
+4. Message names:
+   - None
+
+5. Function names:
+   - toggleTheme
+   - initializeTheme
