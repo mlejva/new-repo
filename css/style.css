@@ -8,102 +8,75 @@ body {
 /* Dark mode */
 .dark-mode {
   --bg-primary: #1a202c;
-  --text-primary: #f7fafc;
+  --bg-secondary: #2d3748;
+  --text-primary: #e2e8f0;
   --text-secondary: #a0aec0;
-  --accent: #4a5568;
 }
 
 /* Light mode */
 .light-mode {
-  --bg-primary: #f7fafc;
-  --text-primary: #1a202c;
-  --text-secondary: #4a5568;
-  --accent: #a0aec0;
+  --bg-primary: #ffffff;
+  --bg-secondary: #edf2f7;
+  --text-primary: #2d3748;
+  --text-secondary: #718096;
 }
 
-/* Apply theme colors */
-body {
+/* Apply mode colors */
+body,
+.header,
+.about,
+.hobbies,
+.currentJob,
+.socialLinks {
   background-color: var(--bg-primary);
   color: var(--text-primary);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--text-primary);
+.header,
+.about,
+.hobbies,
+.currentJob,
+.socialLinks {
+  border-color: var(--bg-secondary);
 }
 
-a {
-  color: var(--accent);
-}
-
-a:hover {
+a,
+.dark-mode-toggle {
   color: var(--text-secondary);
 }
 
-/* Header */
-#header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
-
-/* Sections */
-section {
-  padding: 2rem 0;
-}
-
-/* About section */
-#about {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-#about img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-}
-
-/* Hobbies section */
-#hobbies {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-}
-
-#hobbies img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 0.5rem;
-}
-
-/* Current job section */
-#current-job {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-/* Links section */
-#links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-/* Footer */
-#footer {
-  text-align: center;
-  padding: 1rem 0;
+a:hover,
+.dark-mode-toggle:hover {
+  color: var(--text-primary);
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
-  #about {
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 640px) {
+  .header,
+  .about,
+  .hobbies,
+  .currentJob,
+  .socialLinks {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .header,
+  .about,
+  .hobbies,
+  .currentJob,
+  .socialLinks {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header,
+  .about,
+  .hobbies,
+  .currentJob,
+  .socialLinks {
+    padding: 3rem;
   }
 }

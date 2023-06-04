@@ -6,7 +6,6 @@
     <title>Vasek Mlejnsky - Personal Website</title>
     <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
 </head>
 <body class="bg-white dark:bg-gray-800">
     <header id="header" class="text-center py-8">
@@ -17,41 +16,35 @@
 
     <section id="about" class="px-4 py-8">
         <h2 class="text-2xl font-bold mb-4">About</h2>
-        <p>Vasek Mlejnsky is a passionate software developer and the CEO of <a href="https://e2b.dev" target="_blank" rel="noopener noreferrer">e2b.dev</a>. He enjoys playing basketball and building software for future AI overlords.</p>
+        <p class="text-left">Vasek Mlejnsky is a passionate software developer and the CEO of e2b.dev. He enjoys playing basketball and building software for future AI overlords. With a strong background in software development, Vasek is always eager to learn new technologies and create innovative solutions.</p>
     </section>
 
     <section id="hobbies" class="px-4 py-8">
         <h2 class="text-2xl font-bold mb-4">Hobbies</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="hobby-card">
-                <img src="img/basketball.jpg" alt="Basketball" class="w-full h-48 object-cover">
-                <h3 class="text-xl font-bold mt-2">Basketball</h3>
-            </div>
-            <div class="hobby-card">
-                <img src="img/ai_overlords.jpg" alt="AI Overlords" class="w-full h-48 object-cover">
-                <h3 class="text-xl font-bold mt-2">Building Software for AI Overlords</h3>
-            </div>
-        </div>
-    </section>
-
-    <section id="current-job" class="px-4 py-8">
-        <h2 class="text-2xl font-bold mb-4">Current Job</h2>
-        <p>CEO at <a href="https://e2b.dev" target="_blank" rel="noopener noreferrer">e2b.dev</a></p>
-    </section>
-
-    <section id="links" class="px-4 py-8">
-        <h2 class="text-2xl font-bold mb-4">Links</h2>
-        <ul>
-            <li><a href="https://twitter.com/mlejva" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-            <li><a href="https://linkedin.com/in/mlejva" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li><a href="https://github.com/mlejva" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <ul class="list-disc list-inside text-left">
+            <li>Basketball</li>
+            <li>Building software for future AI overlords</li>
         </ul>
     </section>
 
-    <footer id="footer" class="text-center py-4">
-        <button onclick="toggleDarkMode()" class="bg-gray-300 dark:bg-gray-700 px-4 py-2 rounded">Toggle Dark Mode</button>
-        <button onclick="toggleLightMode()" class="bg-gray-300 dark:bg-gray-700 px-4 py-2 rounded ml-4">Toggle Light Mode</button>
-        <p class="mt-4">&copy; Vasek Mlejnsky - All Rights Reserved</p>
+    <section id="currentJob" class="px-4 py-8">
+        <h2 class="text-2xl font-bold mb-4">Current Job</h2>
+        <p class="text-left">CEO at <a href="https://e2b.dev" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700">e2b.dev</a></p>
+    </section>
+
+    <section id="socialLinks" class="px-4 py-8">
+        <h2 class="text-2xl font-bold mb-4">Social Links</h2>
+        <ul class="text-left">
+            <li><a href="https://twitter.com/mlejva" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700">Twitter</a></li>
+            <li><a href="https://linkedin.com/in/mlejva" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700">LinkedIn</a></li>
+            <li><a href="https://github.com/mlejva" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700">GitHub</a></li>
+        </ul>
+    </section>
+
+    <footer class="text-center py-4">
+        <button id="darkModeToggle" class="text-blue-500 hover:text-blue-700" onclick="toggleDarkMode()">Toggle Dark Mode</button>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

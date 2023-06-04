@@ -1,15 +1,9 @@
-function toggleDarkMode() {
-  document.body.classList.toggle("dark");
-}
+document.addEventListener('DOMContentLoaded', () => {
+  const darkModeToggle = document.getElementById('darkModeToggle');
 
-function toggleLightMode() {
-  document.body.classList.toggle("light");
-}
+  darkModeToggle.addEventListener('click', toggleDarkMode);
 
-document.addEventListener("DOMContentLoaded", function () {
-  const darkModeButton = document.getElementById("dark-mode-button");
-  const lightModeButton = document.getElementById("light-mode-button");
-
-  darkModeButton.addEventListener("click", toggleDarkMode);
-  lightModeButton.addEventListener("click", toggleLightMode);
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark');
+  }
 });
