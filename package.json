@@ -1,0 +1,25 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "A blog using Next.js and Tailwind CSS where you can write content with markdown",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "tailwindcss": "latest",
+    "postcss": "latest",
+    "autoprefixer": "latest",
+    "gray-matter": "latest",
+    "remark": "latest",
+    "remark-html": "latest"
+  },
+  "devDependencies": {
+    "postcss-loader": "latest"
+  }
+}
