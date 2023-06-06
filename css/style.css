@@ -1,0 +1,82 @@
+@import 'tailwind.css';
+
+/* Custom styles */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Dark mode */
+.dark-mode {
+  --bg-primary: #1a202c;
+  --bg-secondary: #2d3748;
+  --text-primary: #e2e8f0;
+  --text-secondary: #a0aec0;
+}
+
+/* Light mode */
+.light-mode {
+  --bg-primary: #ffffff;
+  --bg-secondary: #edf2f7;
+  --text-primary: #2d3748;
+  --text-secondary: #718096;
+}
+
+/* Apply mode colors */
+body,
+.header,
+.about,
+.hobbies,
+.currentJob,
+.socialLinks {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.header,
+.about,
+.hobbies,
+.currentJob,
+.socialLinks {
+  border-color: var(--bg-secondary);
+}
+
+a,
+.dark-mode-toggle {
+  color: var(--text-secondary);
+}
+
+a:hover,
+.dark-mode-toggle:hover {
+  color: var(--text-primary);
+}
+
+/* Responsive styles */
+@media (max-width: 640px) {
+  .header,
+  .about,
+  .hobbies,
+  .currentJob,
+  .socialLinks {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .header,
+  .about,
+  .hobbies,
+  .currentJob,
+  .socialLinks {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header,
+  .about,
+  .hobbies,
+  .currentJob,
+  .socialLinks {
+    padding: 3rem;
+  }
+}

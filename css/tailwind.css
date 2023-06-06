@@ -1,0 +1,36 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css';
+
+/* Custom styles */
+.text-smaller {
+  font-size: 0.875rem;
+}
+
+.bio {
+  max-width: 40rem;
+}
+
+.hobbies-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.social-link {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.dark-mode .dark {
+  display: block;
+}
+
+.dark-mode .light {
+  display: none;
+}
+
+.light-mode .dark {
+  display: none;
+}
+
+.light-mode .light {
+  display: block;
+}
