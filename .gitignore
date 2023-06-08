@@ -1,0 +1,10 @@
+node_modules/
+/dist/
+/.cache/
+/public/
+.env
+*.log
+*.lock
+*.bak
+*.swp
+*.DS_Store
