@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const backgroundSvg = document.getElementById("background-svg");
 
   const updateSvgSize = () => {
-    backgroundSvg.setAttribute("width", window.innerWidth);
-    backgroundSvg.setAttribute("height", window.innerHeight);
+    backgroundSvg.style.width = `${window.innerWidth}px`;
+    backgroundSvg.style.height = `${window.innerHeight}px`;
   };
 
   updateSvgSize();
