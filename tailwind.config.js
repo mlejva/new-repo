@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./index.html'],
+  purge: [],
   darkMode: 'media',
   theme: {
     extend: {
@@ -9,7 +9,6 @@ module.exports = {
       },
       textColor: {
         'light': '#F3F4F6',
-        'lighter': '#E5E7EB',
       },
     },
   },
